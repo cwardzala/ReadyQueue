@@ -2,10 +2,13 @@
     "use strict";
     var rq = {};
     rq.q = {};
-
+    rq.count = 0;
     rq.add = function (name,cback) {
-        var tempName = (typeof name === 'string') ? name : "queue" + Object.keys(rq.q).length;
+        
+        var tempName = (typeof name === 'string') ? name : "queue" + rq.count;
         rq.q[tempName] = (typeof name === 'function') ? name : cback;
+        rq.count++
+        
         return this;
     };
 

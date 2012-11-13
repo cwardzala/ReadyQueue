@@ -26,6 +26,9 @@ A small library to allow shiming of old scattered code for use with defered java
 
 ## API
 
+### count
+The number of items in the queue starting with 1.
+
 ### add
 ```javascript
 rq.add(string name, function callback)
