@@ -23,24 +23,24 @@ A small library to allow shiming of old scattered code for use with defered java
 ## API
 
 ### add
-    ```javascript
-    rq.add(string name, function callback)
-    // or
-    rq.add(function callback)
-    ```
+```javascript
+rq.add(string name, function callback)
+// or
+rq.add(function callback)
+```
 The add method allows you to add events to the queue.
 
 Simply pass a string name and function callback to the add() method. Name is not required.
 
 ### emit
-    ```javascript
-    rq.emit()
-    ```
+```javascript
+rq.emit()
+```
 The emit method will loop through and run all your queued callbacks in order.
 
 
 ### clear
-    ```javascript
-    rq.clear()
-    ```
+```javascript
+rq.clear()
+```
 Clear will reset the queue `rq.q` to an empty object. All callbacks will be removed.
