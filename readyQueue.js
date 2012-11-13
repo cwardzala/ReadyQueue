@@ -17,8 +17,8 @@
         }
     };
 
-    rq.remove = function (name) {
-        delete rq.q[name];
+    rq.clear = function () {
+        rq.q = {};
     };
 
     window.readyQueue = rq;
