@@ -43,4 +43,4 @@ The emit method will loop through and run all your queued callbacks in order.
 ```javascript
 rq.clear()
 ```
-Clear will reset the queue `rq.q` to an empty object. All callbacks will be removed.
+Clear will reset the queue (`rq.q`) to an empty object. All callbacks will be removed.
