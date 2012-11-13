@@ -41,9 +41,11 @@ Simply pass a string name and function callback to the add() method. Name is not
 
 ### emit
 ```javascript
-rq.emit()
+rq.emit(library)
 ```
 The emit method will loop through and run all your queued callbacks in order.
+
+If you want your js library to be available in your callback pass it to emit.
 
 
 ### clear
