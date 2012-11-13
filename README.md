@@ -3,7 +3,7 @@ A small library to allow shiming of old scattered code for use with defered java
 
 1. Include library
     ```html
-    <script src="/path/to/readyQueue.js"></script>
+    <script src="/path/to/readyQueue.min.js"></script>
     ```
 
 2. Queue up some events
